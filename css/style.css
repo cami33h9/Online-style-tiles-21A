@@ -3,6 +3,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
 @import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Nunito+Sans:wght@300&display=swap");
+@import url("https://use.typekit.net/mkl7jag.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -27,11 +31,14 @@ use the fonts in other ways in the font hierarchy etc. */
 
   --white-space: 1rem;
 
-  --bg-color: #000;
-  --link-color: #000;
-  --link-hover-color: #000;
-  --color-4: #000;
-  --color-5: #000;
+  --bg-color: #2b195e;
+  --link-color: #554688;
+  --link-hover-color: #dec7e8;
+  --color-4: #e9b2c7;
+  --color-5: #899600;
+  --color-6: #9fd2b0;
+  --color-7: #e8c87d;
+  --color-8: #811639;
 
   --primary-font: sans-serif;
   --secondary-font: serif;
@@ -65,28 +72,32 @@ footer {
 }
 
 .header-wrapper h1 {
-  font-size: 3rem;
   text-transform: uppercase;
-  letter-spacing: -2px;
   padding-right: 0.75em;
-  font-weight: bold;
-  color: white;
+  color: #e8c87d;
+  font-size: 5rem;
+  font-family: garage-gothic, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .header-wrapper h2 {
-  font-size: 1.6em;
-  color: rgba(255, 255, 255, 0.95);
-  font-weight: bold;
+  color: #9fd2b0;
   margin: var(--white-space) 0;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 2.5rem;
 }
 
 .header-wrapper h3 {
   font-size: 1.2rem;
-  font-style: italic;
+  font-family: "Nunito Sans", sans-serif;
+  padding-bottom: 5px;
 }
 
 .header-wrapper h4 {
   font-size: 0.8rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
 }
 
 main {
@@ -99,9 +110,8 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
   font-size: 1.3rem;
-  color: #777;
+  color: #2b195e;
   margin: 0.5rem 0;
 }
 
@@ -138,6 +148,18 @@ ul li:last-child {
 
 .color-swatch-5 {
   background-color: var(--color-5);
+}
+
+.color-swatch-6 {
+  background-color: var(--color-6);
+}
+
+.color-swatch-7 {
+  background-color: var(--color-7);
+}
+
+.color-swatch-8 {
+  background-color: var(--color-8);
 }
 
 .textures li {
@@ -181,7 +203,7 @@ ul li:last-child {
 
 button {
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 10px;
   background: var(--link-color);
   text-align: center;
   text-decoration: none;
@@ -189,14 +211,12 @@ button {
   letter-spacing: 1px;
   color: white;
   text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
-  transition: all 0.2s ease;
   cursor: pointer;
   /* margin: 0 1rem 0 0; */
 }
 
 .secondary-button {
-  background: var(--color-5);
+  background: var(--color-7);
 }
 
 button:focus,
@@ -208,7 +228,6 @@ button:focus-within {
 
 button:hover {
   background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
 }
 
 button:active {
@@ -220,18 +239,19 @@ button:active {
 }
 
 .h1-sample {
-  font-size: 2.4rem;
-  font-weight: bold;
+  font-size: 5rem;
+  font-family: garage-gothic, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
-  font-style: italic;
-  font-size: 1.25rem;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 2.5rem;
 }
 
 p.typography-sample {
-  font-family: var(--secondary-font);
+  font-family: "Nunito Sans", sans-serif;
   line-height: 1.5;
   max-width: 960px;
 }
@@ -245,7 +265,8 @@ em {
 }
 
 a {
-  font-family: var(--primary-font);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
   color: var(--link-color);
   font-weight: bold;
   text-decoration: none;
@@ -254,9 +275,6 @@ a {
 
 a:hover {
   color: var(--link-hover-color);
-  font-size: 4rem;
-  background-color: var(--color-4);
-  opacity: 0.1;
 }
 
 p[class*="font-details-"] {
@@ -269,8 +287,9 @@ p[class*="font-details-"] {
 }
 
 .adjectives ul {
-  font-size: 2rem;
-  opacity: 0.5;
+  font-size: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
 }
 
 .adjectives ul {
@@ -278,7 +297,8 @@ p[class*="font-details-"] {
 }
 
 footer {
-  font-style: italic;
+  font-size: 1rem;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 @media (min-width: 800px) {
