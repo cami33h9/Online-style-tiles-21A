@@ -132,56 +132,68 @@ ul li:last-child {
 
 .color-swatch-1 {
   background-color: var(--bg-color);
+  border-radius: 10px;
 }
 
 .color-swatch-2 {
   background-color: var(--link-color);
+  border-radius: 10px;
 }
 
 .color-swatch-3 {
   background-color: var(--link-hover-color);
+  border-radius: 10px;
 }
 
 .color-swatch-4 {
   background-color: var(--color-4);
+  border-radius: 10px;
 }
 
 .color-swatch-5 {
   background-color: var(--color-5);
+  border-radius: 10px;
 }
 
 .color-swatch-6 {
   background-color: var(--color-6);
+  border-radius: 10px;
 }
 
 .color-swatch-7 {
   background-color: var(--color-7);
+  border-radius: 10px;
 }
 
 .color-swatch-8 {
   background-color: var(--color-8);
+  border-radius: 10px;
 }
 
 .textures li {
-  height: 30vw;
+  height: 20vw;
   width: 40%;
-  margin-right: 5vw;
+  margin-right: 4.4vw;
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/jord.png) top left repeat;
+  background-size: cover;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
+  background: url(../img/baer.png) top left repeat;
+  background-size: cover;
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/inge.png) top left repeat;
+  background-size: cover;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  background: url(../img/jord.png) top left repeat;
+  background-size: cover;
 }
 
 .images ul {
@@ -243,17 +255,20 @@ button:active {
   font-family: garage-gothic, sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: #2b195e;
 }
 
 .h2-sample {
   font-family: "Nanum Pen Script", cursive;
   font-size: 2.5rem;
+  color: #2b195e;
 }
 
 p.typography-sample {
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.5;
   max-width: 960px;
+  color: #2b195e;
 }
 
 strong {
